@@ -1,11 +1,12 @@
+
 .stat-card {
-  background: #d4b983; /* beige */
+  background: #d4b983; 
+  flex: 1 1 140px; /* allows card to grow and shrink */
   padding: 18px 24px;
   border-radius: 12px;
   min-width: 140px;
   text-align: center;
   color: #000;
-  font-family: "Poppins", sans-serif;
 }
 
 .stat-title {
@@ -17,4 +18,4 @@
 .stat-value {
   font-size: 1.5rem;
   font-weight: 700;
-}
+} 

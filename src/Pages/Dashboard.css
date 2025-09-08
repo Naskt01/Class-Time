@@ -1,80 +1,49 @@
-/* Dashboard.css - matches the classNames used in your Dashboard.jsx */
-
 /* page layout */
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
+  background: #fff;
+}
 .dashboard-layout {
   display: flex;
-  min-height: 100vh;
-  font-family: "Poppins", sans-serif;
+  flex: 1;
+  min-height: 0;
   background: #ffffff;
 }
 
-/* Sidebar expected to be a sibling component - give it a fixed width */
-.sidebar {
-  width: 220px;            /* make sure Sidebar root has className="sidebar" */
-  flex: 0 0 220px;
-  min-height: 100vh;
-  background: #f9f9f9;
-  border-right: 1px solid #ddd;
-}
-
-/* main column next to the sidebar */
-.dashboard-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-}
-
-/* If Topbar component root uses className="topbar", style it here */
-.topbar {
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 20px;
-  background-color: #d4b983; /* beige */
-}
-
 /* main content area (below the topbar) */
-.dashboard-content main {
-  padding: 24px;
-  overflow: auto;
+.dashboard-main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background: #f9f9f9;
 }
 
 /* welcome heading */
-.dashboard-content main h1 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin: 0 0 18px;
-}
+.dashboard-welcome h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 0 0 50px;
 
-/* stats row (matches JSX className="stats") */
+}
+/* stats section */
 .stats {
   display: flex;
-  gap: 20px;
-  margin-bottom: 30px;
-  align-items: stretch;
+  gap: 30px;
+  margin: 0 0 50px;
   flex-wrap: wrap; /* wrap on smaller screens */
 }
-
-/* StatCard sizing helpers (StatCard component should output an element with class .stat-card) */
-.stat-card {
-  min-width: 140px;
-  padding: 18px 24px;
-  border-radius: 12px;
-  text-align: center;
-  background: #d4b983;
-  color: #000;
-}
-
 /* quick actions (matches JSX className="quick-actions") */
 .quick-actions {
-  margin-top: 20px;
+  margin-top: 70px;
+  margin-bottom: 60px;
 }
 
 .quick-actions h2 {
-  font-size: 1.25rem;
-  margin-bottom: 12px;
+  font-size: 1.9rem;
+  margin-bottom: 30px;
+  font-weight: lighter;
 }
 
 .quick-actions ul {
@@ -82,18 +51,17 @@
   padding-left: 18px;
 }
 
-.quick-actions li {
-  margin-bottom: 8px;
+.quick-actions li { 
+  font-size: 1rem;
+  margin-bottom: 30px;
 }
 
 .quick-actions a {
   color: #007bff;
-  text-decoration: none;
-}
-
-.quick-actions a:hover {
+  font-style: italic;
   text-decoration: underline;
 }
+
 
 /* Responsive: stack layout on narrow screens */
 @media (max-width: 900px) {

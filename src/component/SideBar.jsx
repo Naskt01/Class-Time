@@ -10,13 +10,12 @@ import "./Sidebar.css";
 function Sidebar() {
   return (
     <aside className="sidebar">
-      <h2 className="logo">ClassTime</h2>
       <nav>
         <Link to="/dashboard"><RiDashboardFill /> Dashboard</Link>
-        <Link to="/rooms"><MdMeetingRoom /> Room</Link>
-        <Link to="/teachers"><FaChalkboardTeacher /> Teacher</Link>
-        <Link to="/students"><PiStudentBold /> Student</Link>
-        <Link to="/courses"><FaBook /> Course</Link>
+        <Link to="/room"><MdMeetingRoom /> Room</Link>
+        <Link to="/teacher"><FaChalkboardTeacher /> Teacher</Link>
+        <Link to="/student"><PiStudentBold /> Student</Link>
+        <Link to="/course"><FaBook /> Course</Link>
         <Link to="/schedule"><FaCalendarAlt /> Schedule</Link>
         <Link to="/announcements"><MdAnnouncement /> Announcements</Link>
       </nav>
