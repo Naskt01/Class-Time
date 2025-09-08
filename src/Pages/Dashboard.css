@@ -1,0 +1,112 @@
+/* Dashboard.css - matches the classNames used in your Dashboard.jsx */
+
+/* page layout */
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+}
+
+/* Sidebar expected to be a sibling component - give it a fixed width */
+.sidebar {
+  width: 220px;            /* make sure Sidebar root has className="sidebar" */
+  flex: 0 0 220px;
+  min-height: 100vh;
+  background: #f9f9f9;
+  border-right: 1px solid #ddd;
+}
+
+/* main column next to the sidebar */
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+/* If Topbar component root uses className="topbar", style it here */
+.topbar {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: #d4b983; /* beige */
+}
+
+/* main content area (below the topbar) */
+.dashboard-content main {
+  padding: 24px;
+  overflow: auto;
+}
+
+/* welcome heading */
+.dashboard-content main h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+
+/* stats row (matches JSX className="stats") */
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: stretch;
+  flex-wrap: wrap; /* wrap on smaller screens */
+}
+
+/* StatCard sizing helpers (StatCard component should output an element with class .stat-card) */
+.stat-card {
+  min-width: 140px;
+  padding: 18px 24px;
+  border-radius: 12px;
+  text-align: center;
+  background: #d4b983;
+  color: #000;
+}
+
+/* quick actions (matches JSX className="quick-actions") */
+.quick-actions {
+  margin-top: 20px;
+}
+
+.quick-actions h2 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.quick-actions ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.quick-actions li {
+  margin-bottom: 8px;
+}
+
+.quick-actions a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.quick-actions a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: stack layout on narrow screens */
+@media (max-width: 900px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex: 0 0 auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+  .stats {
+    justify-content: center;
+  }
+}

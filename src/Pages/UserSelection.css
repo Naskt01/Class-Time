@@ -1,23 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); 
 
-:root{
-  --beige: #d4b983; /* circle color — adjust to match your design */
-  --text: #0b0b0b;
-  --muted: #666;
-  --max-width: 980px;
-  --circle-size: 150px;
-}
-
-* { box-sizing: border-box; }
-html,body,#root { height: 100%; margin: 0; font-family: 'Poppins'; color: var(--text); }
-
-.hero {
+.container {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 48px 20px;
   text-align: center;
 }
-.hero-top { 
+.container-top { 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
@@ -33,7 +21,8 @@ html,body,#root { height: 100%; margin: 0; font-family: 'Poppins'; color: var(--
 .brand { 
     font-size: 2.25rem; 
     margin: 6px 0 0; 
-    font-weight: 700; }
+    font-weight: 700; 
+  }
 .tagline { 
     margin: 8px 0 18px; 
     color: var(--muted); 
@@ -86,7 +75,7 @@ html,body,#root { height: 100%; margin: 0; font-family: 'Poppins'; color: var(--
   background: transparent ;
 }
 /* svg icons inside circle */
-.role-circle .icon { 
+.role-icon { 
     width: 45%; 
     height: 45%; 
     color: #000; 
@@ -99,14 +88,8 @@ html,body,#root { height: 100%; margin: 0; font-family: 'Poppins'; color: var(--
     text-align: center;
 }
 
-/* keyboard focus */
-.role-card:focus .role-circle {
-  outline: 3px solid rgba(0,0,0,0.08);
-  outline-offset: 6px;
-}
-
 /* Responsive: stack on small screens */
 @media (max-width: 640px) {
-  .role-grid { flex-direction: column; gap: 12px; }
+  .role-grid { gap: 12px; }
   :root { --circle-size: 120px; }
 }
