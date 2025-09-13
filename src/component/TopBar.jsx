@@ -5,7 +5,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 
-import "./Topbar.css";
+import "./TopBar.css";
 
   function Topbar() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -14,7 +14,7 @@ import "./Topbar.css";
     const handleLogout = () => {
     // 🔹 Clear user session/auth here if needed (localStorage, cookies, etc.)
     localStorage.removeItem("authToken"); // example if you store a token
-    navigate("/login"); // redirect to login page
+    navigate("/"); // redirect to userselection page
   };
 
   return (

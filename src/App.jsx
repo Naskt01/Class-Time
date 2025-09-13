@@ -1,15 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import UserSelection from '../src/Pages/UserSelection';
-import Login from "../src/Pages/Login";
-import Dashboard from "../src/Pages/Dashboard";
-import Room from '../src/Pages/Room';
-import Teacher from '../src/Pages/Teacher';
-import Student from '../src/Pages/Student';
-import Course from '../src/Pages/Course';
-import Schedule from '../src/Pages/Schedule';
+import UserSelection from './Pages/UserSelection';
+import Login from './Pages/Login';
+import Dashboard from './Pages/Dashboard';
+import Room from './Pages/Room';
+import Teacher from './Pages/Teacher';
+import Student from './Pages/Student';
+import Course from './Pages/Course';
+import Schedule from './Pages/Schedule';
 import Announcements from '../src/Pages/Announcements';
-
 
 function App() {
   return (

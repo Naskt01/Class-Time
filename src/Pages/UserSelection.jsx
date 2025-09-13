@@ -18,9 +18,9 @@ function UserSelection() {
     // ROLE CATAGORIES DEFINED BELOW:
 
     const roles = [
-        { key: 'admin', label: 'Admin', Icon: RiAdminFill },
-        { key: 'teacher', label: 'Teacher', Icon: FaChalkboardTeacher },
-        { key: 'student', label: 'Student', Icon: PiStudentBold },
+        { key: 'Admin', label: 'Admin', Icon: RiAdminFill },
+        { key: 'Teacher', label: 'Teacher', Icon: FaChalkboardTeacher },
+        { key: 'Student', label: 'Student', Icon: PiStudentBold },
     ];
 
   return (

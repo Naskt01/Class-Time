@@ -1,43 +1,21 @@
-/* page layout */
-.dashboard-content {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* full viewport height */
-  background: #fff;
-}
-.dashboard-layout {
-  display: flex;
-  flex: 1;
-  min-height: 0;
-  background: #ffffff;
-}
-
-/* main content area (below the topbar) */
-.dashboard-main {
-  flex: 1;
-  padding: 30px;
-  overflow-y: auto;
-  background: #f9f9f9;
-}
 
 /* welcome heading */
 .dashboard-welcome h1 {
   font-size: 2rem;
   font-weight: lighter;
-  margin: 0 0 50px;
-
+  margin: 0 0 60px;
 }
 /* stats section */
 .stats {
   display: flex;
   gap: 30px;
-  margin: 0 0 50px;
+  margin: 0 0 60px;
   flex-wrap: wrap; /* wrap on smaller screens */
 }
 /* quick actions (matches JSX className="quick-actions") */
 .quick-actions {
-  margin-top: 70px;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .quick-actions h2 {
